@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser Detect</title>
+</head>
+
+<body>
+   
+        <script>
+            var ba = ["Chrome","Firefox","Safari","Opera","MSIE","Trident","Edge"];
+            var b, ua = navigator.userAgent;
+            for(var i=0; i < ba.length; i++){
+    if( ua.indexOf(ba[i]) > -1 ){
+                b = ba[i];
+            break;
+    }
+}
+            if(b == "MSIE" || b == "Trident" || b == "Edge"){
+                b = "Internet Explorer";
+}
+            alert("You are using " + b + " browser");
+    </script>
+
+
+    <!-- ba is browser array
+     ua is short for user agent -->
+   
+</body>
+
+</html>
