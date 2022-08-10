@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider Newsltters/Articles</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="start">
+
+        <h1>Newsltters/Articles/Reviews</h1>
+
+        <div class="review-box">
+
+            <div id="slide">
+
+                <div class="card">
+
+                    <div class="profile">
+
+                        <img src="pic1.jpg">
+                        <div>
+                            <h3>Supriya Maurya</h3>
+                            <p>IT Manager</p>
+                        </div>
+
+                    </div>
+
+                    <p>These individuals may have job titles such as CTO, CIO,
+                        IT director, information systems director, IT project manager,
+                        database manager, among others. IT managers help guide the
+                        technological direction of their organizations by constructing
+                        business plans, overseeing network security, and directing online
+                        operations.</p>
+
+                </div>
+
+                <!-- 1-------------------------------------------------------------------------------------- -->
+
+                <div class="card">
+
+                    <div class="profile">
+
+                        <img src="pic2.jpg">
+                        <div>
+                            <h3>Ramkumar Dharmaji</h3>
+                            <p>Security Manager</p>
+                        </div>
+
+                    </div>
+
+                    <p>A cybersecurity manager is an IT professional who
+                        oversees security systems and teams, identifies potential
+                        network vulnerabilities and devises strategies to counter
+                        the methods cybercriminals use to infiltrate information systems</p>
+
+                </div>
+
+                <!-- 2-------------------------------------------------------------------------------------- -->
+
+                <div class="card">
+
+                    <div class="profile">
+
+                        <img src="pic3.jpg">
+                        <div>
+                            <h3>Sony Rajbhar</h3>
+                            <p>Network Engineer</p>
+                        </div>
+
+                    </div>
+
+                    <p>A network engineer is a technology professional
+                        who has the necessary skills to plan, implement and
+                        oversee the computer networks that support in-house
+                        voice, data, video and wireless network services</p>
+
+                </div>
+
+                <!-- 3-------------------------------------------------------------------------------------- -->
+
+                <div class="card">
+
+                    <div class="profile">
+
+                        <img src="pic4.jpg">
+                        <div>
+                            <h3>Aashish Sharma</h3>
+                            <p>Design Engineer</p>
+                        </div>
+
+                    </div>
+
+                    <p>A design engineer is an engineer focused on the
+                        engineering design process in any of the various
+                        engineering disciplines and design disciplines like
+                        Human-Computer Interaction. Design engineers tend to
+                        work on products and systems that involve adapting and
+                        using omplex scientific and mathematical techniques.</p>
+
+                </div>
+
+                <!--4 -------------------------------------------------------------------------------------- -->
+            </div>
+            <div class="sidebar">
+                <img src="up-arrow.png" id="upArrow">
+                <img src="down-arrow.png" id="downArrow">
+            </div>
+
+        </div>
+    </div>
+
+
+    <script>
+
+        var slide = document.getElementById('slide');
+        var upArrow = document.getElementById('upArrow');
+        var downArrow = document.getElementById('downArrow');
+
+        let x = 0;
+
+        upArrow.onclick = function () {
+            if (x > "-900") {
+                x = x - 300;
+                slide.style.top = x + "px";
+            }
+        }
+
+        downArrow.onclick = function () {
+            if (x < 0) {
+                x = x + 300;
+                slide.style.top = x + "px";
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
